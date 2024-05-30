@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long long n; cin >> n;
+    cout << n;
+    while (n!=1)
+    {
+        if (n%2==0)
+        {
+            n/=2;
+            cout << ' ' << n;
+        }
+        else
+        {
+            n*=3;
+            n+=1;
+            cout << ' ' << n;
+        }
+    }
+}
+
+// 16:25 - 30/05/24
+// Chu: (so le * 3 + 1) co the lon hon 10^6 (int) -> n: long long
